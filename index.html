@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taran's Fashion Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./Images/photo-1597633125184-9fd7e54f0ff7.avif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./Js/index.js" defer></script>
+    <link rel="stylesheet" href="./CSS/responsive.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm p-2 navbar-dark bg-dark fixed-top">
+        <div class="container-sm p-2">
+            <a href="#" class="navbar-brand mb-0">Taran's</a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler ms-auto"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="featureDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">New Arrivals</a>
+                        <ul class="dropdown-menu" aria-labelledby="Features Dropdown">
+                            <li class="dropdown"> <a href="#" class="dropdown-item ">NHL Hoddies</a></li>
+                            <li> <a href="#" class="dropdown-item">NHL Hoddies</a></li>
+                            <li> <a href="#" class="dropdown-item">NHL Hoddies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+                </ul>
+            </div>
+            <!---search button --->
+            <form action="#" class="d-none d-sm-none d-md-flex w-50 ms-5">
+                <input type="text" class="form-control w-50" id="srch" placeholder="Search for Accessory" name="">
+                <button class="btn btn-outline-secondary ms-2" style="width: 110px;">Search</button>
+            </form>
+            <!--Profile links --->
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#profileNav" class="navbar-toggler ms-2"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a href="#">Profile</a>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="profileNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="featureDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+                        <ul class="dropdown-menu" aria-labelledby="Profile Dropdown">
+                            <li><a href="#" class="dropdown-item">Sign in/out</a></li>
+                            <li><a href="#" class="dropdown-item">Your orders</a></li>
+                            <li><a href="#" class="dropdown-item">Setting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Wishlist</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!--landing page images-->
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/women.jpeg" alt="Los Angeles" class="d-block" style="width:100%; height:
+                    100vh; object-fit:cover;">
+                    <div class="carousel-caption  flex-column">
+                        <h1 class="display-4">Discover your Signature Look, <br>
+                            Shop Fashion Accessories</h1>
+                        <button class="btn btn-light py-2 px-4 rounded-5 w-20 shopNow">Shop now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <!--add javaScript to change image on responsiveness-->
+                    <img src="./Images/men-shopping.jpeg" alt="Chicago" class="d-block " style="width:100%; height:
+                    100vh;">
+                    <div class="carousel-caption">
+                        <h1 class="display-4">Discover your Signature Look, <br>
+                            Shop Fashion Accessories</h1>
+                        <button class="btn btn-light py-2 px-4 rounded-5 w-20 shopNow">Shop now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!--Our Products Section-->
+        <section class="my-5">
+
+            <div id="products" class="mx-auto w-75">
+                <h2 class="display-5  mx-5" id="productsHeading">Products</h2>
+                <div class="row mx-auto">
+                    <!--watches-->
+                    <div class="card product-card col-3 mx-2 my-sm-5 my-lg-3 rounded-4" style="height: 500px;">
+                        <img class="card-img-top" src="./Images/watch.avif" alt="Card image cap"
+                            style="height: 300px; ">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h5 class="card-title">Luxury Watches</h5>
+                            <a href="#" class="btn btn-outline-dark shopBtn">Shop now</a>
+                        </div>
+                    </div>
+
+
+                    <!--sneakers-->
+                    <div class="card  product-card col-3 mx-2 my-sm-5 my-lg-3 rounded-4 " style="height: 500px;">
+                        <img class="card-img-top" src="./Images/Sneakers.avif" alt="Card image cap"
+                            style="height: 300px; ">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h5 class="card-title">Sneakers</h5>
+                            <a href="#" class="btn btn-outline-dark shopBtn">Shop now</a>
+                        </div>
+                    </div>
+
+                    <!--Handbags-->
+                    <div class="card product-card col-3 mx-2 my-sm-5 my-lg-3 rounded-4 " style="height: 500px;">
+                        <img class="card-img-top" src="./newImages/handbags.jpg" alt="Card image cap"
+                            style="height: 300px; ">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h5 class="card-title">Leather Handbags</h5>
+                            <a href="#" class="btn btn-outline-dark shopBtn">Shop now</a>
+                        </div>
+                    </div>
+                    <!--jewellery-->
+                    <div class="card product-card col-3 mx-2 my-sm-5 my-lg-3 rounded-4 " style="height: 500px;">
+                        <img class="card-img-top" src="./Images/jewellery.jpg" alt="Card image cap"
+                            style="height: 300px; ">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h5 class="card-title">New Jewellery</h5>
+                            <a href="#" class="btn btn-outline-dark shopBtn">Shop now</a>
+                        </div>
+                    </div>
+                    <!---Clothes-->
+                    <div class="card product-card col-3 mx-2 my-sm-5 my-lg-3 rounded-4 " style="height: 500px;">
+                        <img class="card-img-top" src="./newImages/Clothes.jpg" alt="Card image cap"
+                            style="height: 300px; ">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h5 class="card-title">Clothes</h5>
+                            <a href="#" class="btn btn-outline-dark shopBtn">Shop now</a>
+                        </div>
+                    </div>
+                    <!--Sunglasses-->
+                    <div class="card  product-card col-3 mx-2 my-sm-5 my-lg-3 rounded-4 " style="height: 500px;">
+                        <img class="card-img-top" src="./Images/sunglasses.jpeg" alt="Card image cap"
+                            style="height: 300px; ">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h5 class="card-title">Sunglasses</h5>
+                            <a href="#" class="btn btn-outline-dark shopBtn">Shop now</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+        <!---Trending Proudcts -->
+        <aside>
+            <h2 class="display-5" id="trendHeading">Trending now</h2>
+
+            <!--image slider wrap-->
+            <div class="imgWrap mx-5">
+
+                <i class='fa fa-angle-left' style='font-size:36px' id="backBtn" role="button"></i>
+                <div id="trendingImages">
+
+                    <div>
+                        <!-- <div style="position: relative;">
+                            <span><img src="./Images/blueSneaker5.jpeg" alt="#" class="trendImg">
+
+                        </div>
+                        <div class="imgCaption" style="position: absolute;">
+                            <h1>Hello Taran</h1>
+                        </div> -->
+                        <div style="position: relative;">
+                            <img src="./newImages/nimble-made-7RIMS-NMsbc-unsplash.jpg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>Polo Shirts</figcaption>
+                            </div>
+                        </div>
+
+
+                        <div style="position: relative;">
+                            <img src="./Images/watchesGroup.jpeg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>Swiss Watches</figcaption>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <img src="./Images/istockphoto-1085148694-612x612.jpg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>T-Shirts</figcaption>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <img src="./Images/istockphoto-1415777941-612x612.jpg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>VRAI Solitaire Necklace</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="position: relative;">
+                            <img src="./newImages/sun-lingyan-_H0fjILH5Vw-unsplash.jpg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>Christian Louboutin</figcaption>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <img src="./newImages/sincerely-media-0a_65JNxv7w-unsplash.jpg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>Michael Kors Rings
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <img src="./newImages/nordwood-themes-Nv4QHkTVEaI-unsplash.jpg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>Leather Shoes with dress</figcaption>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <img src="./newImages/the-nix-company-ooPXbJ22UIk-unsplash.jpg" alt="#" class="trendImg">
+                            <div class="imgCaption">
+                                <figcaption>Nix Company Watch</figcaption>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <i class='fa fa-angle-right' style='font-size:36px' role="button" id="nextBtn"></i>
+
+
+            </div>
+            <!---image slider---->
+
+        </aside>
+
+        <!---Gallery-->
+
+        <figure id="imageGallery">
+            <h2 class="display-5 m-5" id="galleryHeading"> Taran's imaginarium</h2>
+            <!--Gallery Container-->
+            <div class="container-img mx-auto">
+                <div class="containers">
+                    <img src="./Images/istockphoto-1053733162-612x612.jpg" alt="" style="height: 400px;">
+                    <img src="./Images/photo-1606522754091-a3bbf9ad4cb3.avif" alt="" style="height: 550px;">
+                    <img src="./images/sneakerW.jpeg" alt="" style="height: 300px;">
+                </div>
+                <div class="containers">
+                    <img src="./Images/sneakerUni.jpeg" alt="" style="height:625px;">
+                    <img src="./Images/istockphoto-2150203418-612x612.jpg" alt="" style="height: 325px;">
+                    <img src="./newImages/Clothes.jpg" alt="" style="height: 260px">
+                </div>
+                <div class="containers">
+                    <img src="./Images/sneakerUni.jpeg" alt="" style="height:500px">
+                    <img src="./Images/istockphoto-2150203418-612x612.jpg" alt=" #" style="height: 425px;">
+                    <img src="./newImages/Clothes.jpg" alt="" style="height: 300px;">
+                </div>
+            </div>
+
+
+        </figure>
+        <br>
+        <br>
+        <hr>
+        <!--Subscribe-->
+        <div class="subscription w-100 mt-5 d-flex justify-content-around align-items-center flex-column">
+            <div class="content text-center">
+                <p class="display-4">Stay updated daily!</p>
+                <p class="text-center">Subscribe to receive fresh content straight to your inbox. Don't miss out - Sign
+                    up now
+                </p>
+
+
+            </div>
+            <div class="form-floating mb-3 mt-3 w-lg-100 m-auto">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                <label for="email">Email</label>
+            </div>
+            <div id="subs"><button class="btn btn-outline-dark rounded-5 px-lg-4 py-lg-2">Subscribe</button></div>
+        </div>
+    </main>
+    <hr>
+    <footer class="mt-5 p-5 bg-dark text-light">
+        <div class="w-50 m-auto d-flex justify-content-around align-items-center ">
+            <div>
+
+                <ul class="list-unstyled">
+                    <em class="font-weight-bold ">Shop </em>
+                    <li>Mens</li>
+                    <li>Women</li>
+                    <li>New Arrivals</li>
+                    <li>Trending now</li>
+                </ul>
+
+            </div>
+            <div>
+
+
+                <ul class="list-unstyled">
+                    <em class=" font-weight-bold">Trend</em>
+                    <li>Mens</li>
+                    <li>Women</li>
+                    <li>New Arrivals</li>
+                    <li>Trending now</li>
+                </ul>
+            </div>
+            <div>
+
+                <ul class="list-unstyled">
+                    <em class="font-weight-bold">Contact</em>
+                    <li>Mens</li>
+                    <li>Women</li>
+                    <li>New Arrivals</li>
+                    <li>Trending now</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+    <script>
+        const contImages = document.querySelectorAll('.container img:first-child')
+        contImages.forEach(image => {
+            console.log(image.src)
+        })
+    </script>
+</body>
+
+
+</html>

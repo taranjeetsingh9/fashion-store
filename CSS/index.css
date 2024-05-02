@@ -1,0 +1,170 @@
+body {
+  box-sizing: border-box;
+}
+
+.navbar-brand,
+.display-4,
+.shopNow,
+.display-5 {
+  font-family: "Merriweather";
+}
+
+.display-4 {
+  font-weight: 800;
+}
+.shopNow {
+  transition: 0.3s ease-in;
+  font-weight: 600;
+  font-size: 20px;
+}
+.shopNow:hover {
+  transform: scale(0.95);
+  background-color: white;
+}
+.carousel-caption {
+  margin-left: 10%;
+  margin-top: -20%;
+}
+
+.product-card {
+  width: 380px;
+  padding: 0;
+  border-radius: 25px !important;
+  border: none;
+  background-color: white;
+
+  box-shadow: 20px 20px 60px #dadada;
+  box-shadow: 26px 26px 52px #bebebe, -26px -26px 52px #ffffff;
+  box-shadow: 26px 26px 52px #ffffff, -26px -26px 52px #bebebe;
+  border: none;
+  margin: 20px !important;
+  transition: all 0.3s ease-in-out;
+}
+.product-card:hover {
+  transform: scale(0.9);
+  border: 1px solid #bebebe;
+}
+
+.product-card:hover .shopBtn {
+  transform: scale(1.1);
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+
+.product-card img {
+  border-radius: 25px;
+  height: 425px !important;
+  width: 100%;
+}
+.card-title {
+  font-weight: 600;
+  font-family: "Merriweather";
+  letter-spacing: 1.5px;
+}
+
+/*----Trending Products --------*/
+#trendHeading {
+  margin: 1rem 3rem;
+}
+#trendingImages {
+  width: 1500px;
+  display: flex;
+  margin: auto;
+  overflow-x: scroll;
+}
+
+#trendingImages div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0px;
+  flex: none;
+}
+
+.trendImg {
+  width: 100%;
+  max-width: 328px;
+  aspect-ratio: 41/33;
+  border-radius: 25px;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
+
+.trendImg:hover {
+  transform: scale(1.2, 1.01);
+  margin: 10px;
+  filter: brightness(1.1);
+  opacity: 0.9;
+  border-radius: 10px;
+  border: 1px solid #bebebe;
+}
+
+#trendingImages::-webkit-scrollbar {
+  display: none;
+}
+
+.imgWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#backBtn,
+#nextBtn {
+  font-weight: 700;
+}
+
+.imgCaption figcaption {
+  background-color: rgb(255, 255, 255);
+  min-width: 80px;
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  padding: 5px 12px;
+  opacity: 0.7;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 15px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*---Gallery----*/
+#imageGallery {
+  margin: 0 10%;
+}
+#galleryHeading {
+  border-bottom: 2px solid black;
+}
+
+.container-img {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: 90%;
+  min-height: 1300px;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.containers img {
+  width: 370px;
+  border-radius: 0px;
+  border: 0.5px solid rgb(28, 28, 28);
+  transition: 0.3s all ease-in-out;
+}
+
+.containers img:hover {
+  /*transform: scale(1, 2) translate(20px, 30px); */
+  transform: scale(1.05);
+  border-radius: 5%;
+}
+
+.darkMode {
+  color: white;
+  box-shadow: none;
+  background-color: rgb(18, 18, 18);
+}
